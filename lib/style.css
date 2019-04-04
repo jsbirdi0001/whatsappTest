@@ -14,7 +14,7 @@ body{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     text-shadow: 1px 1px white, 2px 2px yellow, 3px 3px orange;
-    
+    font-family: sans-serif;
     
 }
 @keyframes glowhead{
@@ -72,7 +72,7 @@ body{
     }
 }
 .balloon{
-    animation: j 7s;
+    animation: anim2 7s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }

@@ -24,10 +24,20 @@
     <link rel="stylesheet" href="./lib/style.css">
 </head>
 <body>
-    <audio style="display:none" id="playAudio" loop controls autoplay>
+    <audio id="playAudio" loop controls autoplay>
         <source src="waheguru.mp3" type="audio/mpeg">
     </audio>    
-    
+    <iframe src="waheguru.mp3?loop=1" allow="autoplay" style="display:none" id="iframeAudio">
+    </iframe> 
+    <script type="text/JavaScript">
+        var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+            if(!isChrome){
+            $('#iframeAudio').remove()
+            }
+        else{
+            $('#playAudio').remove();
+        }
+    </script>
     <div class="ad col-12 bg-light">
         Advertisement
     </div>
@@ -53,7 +63,7 @@
        </div>
        <div class="col-8 p-0">
             <figure class="text-center">
-                <h1 class="font-weight-bold head">Happy Vaisakhi</h1>
+                <h1 class="head" style="font-weight:800">Happy Vaisakhi</h1>
             </figure>
             <br>
             <br>
