@@ -72,7 +72,7 @@ body{
     }
 }
 .balloon{
-    animation: anim2 7s;
+    animation: j 7s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
