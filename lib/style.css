@@ -9,6 +9,27 @@ body{
     animation-timing-function: linear;
     background: linear-gradient(to bottom, rgba(255,0,0,0.7), rgba(0,0,255,0.7));
 }
+.head{
+    animation: glowhead 5s, dance 1.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    text-shadow: 1px 1px white, 2px 2px yellow, 3px 3px orange;
+    
+    
+}
+@keyframes glowhead{
+    0%, 100%{
+        color: red;
+    }
+    33%{
+        color: blue
+    }
+    66%{
+        color: green;
+    }
+     
+}
+
 .whatsapp{
     color: white;
     background-color: rgb(37, 211, 102);
@@ -100,18 +121,7 @@ body {
   text-align:center;
 }
 
-figure {
-  animation:wobble 5s ease-in-out infinite;
-  transform-origin:center center;
-  transform-style:preserve-3d;
-}
 
-@keyframes wobble {
-  0%,100%{ transform:rotate3d(1,1,0,40deg); }
-  25%{ transform:rotate3d(-1,1,0,40deg); }
-  50%{ transform:rotate3d(-1,-1,0,40deg); }
-  75%{ transform:rotate3d(1,-1,0,40deg); }
-}
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 h1 {
   display:block;
@@ -126,12 +136,6 @@ h1 {
   text-shadow:0 0 30px rgb(222, 247, 255);
 }
 
-h1:nth-child(2){ transform:translateZ(5px); }
-h1:nth-child(3){ transform:translateZ(10px);}
-h1:nth-child(4){ transform:translateZ(15px); }
-h1:nth-child(5){ transform:translateZ(20px); }
-h1:nth-child(6){ transform:translateZ(25px); }
-
 @media (max-width: 768px){
     h1{
         font-size: 2rem;
@@ -143,7 +147,7 @@ h1:nth-child(6){ transform:translateZ(25px); }
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     border-radius: 50%;
-    width: 50%;
+    width: 70%;
 }
 @keyframes glow-img{
     0%{
@@ -174,3 +178,7 @@ h1:nth-child(6){ transform:translateZ(25px); }
         display: block;
     }
 }
+
+
+
+  
