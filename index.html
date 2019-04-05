@@ -24,20 +24,7 @@
     <link rel="stylesheet" href="./lib/style.css">
 </head>
 <body>
-    <audio id="playAudio" loop controls autoplay>
-        <source src="waheguru.mp3" type="audio/mpeg">
-    </audio>    
-    <iframe src="waheguru.mp3?loop=1" allow="autoplay" style="display:none" id="iframeAudio">
-    </iframe> 
-    <script type="text/JavaScript">
-        var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-            if(!isChrome){
-            $('#iframeAudio').remove()
-            }
-        else{
-            $('#playAudio').remove();
-        }
-    </script>
+    
     <div class="ad col-12 bg-light">
         Advertisement
     </div>
@@ -63,7 +50,7 @@
        </div>
        <div class="col-8 p-0">
             <figure class="text-center">
-                <h1 class="head" style="font-weight:800">Happy Vaisakhi</h1>
+                <h1 class="head" style="font-weight:800">Happy Baisakhi</h1>
             </figure>
             <br>
             <br>
@@ -79,12 +66,29 @@
             </div>
             <br>
             <br>
-            <br>
-            <br>
+            
             <br>
             <br>
             <div class="ad col-12 bg-light">
                 Advertisement
+            </div>
+            <div class="baisakhiDiv">
+                <p class="baisakhi"> 
+                    ਆਈ ਵਿਸਾਖੀ ਆਈ ਵਿਸਾਖੀ <br>
+                    ਖ਼ੁਸ਼ੀਆਂ ਨਾਲ ਲਿਆਈ ਵਿਸਾਖੀ
+                    ਸੋਨੇ ਰੰਗੀਆਂ ਕਣਕਾਂ ਹੋਈਆਂ <br>
+                    ਜੱਟਾਂ ਖ਼ੁਸ਼ੀਆਂ ਦਿਲੀਂ ਸਮੋਈਆਂ
+                    ਜਦ ਕੋਈ ਢੋਲ ਤੇ ਡੱਗਾ ਲਾਵੇ <br>
+                    ਖ਼ੁਸ਼ੀ ਨਿਕਲ ਕੇ ਬਾਹਰ ਆਵੇ
+                    ਗੱਭਰੂ ਲਗਦੇ ਭੰਗੜੇ ਪਾਵਣ <br>
+                    ਬੱਚੇ ਵੀ ਖ਼ੁਸ਼ ਹੋ ਹੋ ਜਾਵਣ
+                    ਮੇਲੇ ਜਾ ਝੂਟੇ ਪਏ ਲੈਂਦੇ <br>
+                    ਨਾ ਥੱਕਣ ਤੇ ਨਾ ਹੀ ਬਹਿੰਦੇ
+                    ਸਾਰਾ ਦਿਨ ਕਰਦੇ ਮਨ ਆਈਆਂ <br>
+                    ਖਾਣ ਪੀਣ ਦੀਆਂ ਰੀਝਾਂ ਲਾਹੀਆਂ
+                    ਬੱਚਿਆਂ ਦਾ ਮਨ ਤਾਂ ਇਹ ਚਾਹਵੇ <br>
+                    ਵਿਸਾਖੀ ਛੇਤੀ ਕਿਉਂ ਨਾ ਆਵੇ ?
+                </p>
             </div>
        </div>
        <div class="col-2 balloon p-0">
@@ -122,6 +126,21 @@
     <div class="message text-center display-4">
         Happy Vaisakhi
     </div>
+    <br><br>
+    <audio id="playAudio" class="d-none" loop controls autoplay>
+        <source src="waheguru.mp3" type="audio/mpeg" style="display:none">
+    </audio>    
+    <iframe src="waheguru.mp3?loop=1" class="d-none" allow="autoplay" id="iframeAudio">
+    </iframe> 
+    <script type="text/JavaScript">
+        var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+            if(!isChrome){
+            $('#iframeAudio').remove()
+            }
+        else{
+            $('#playAudio').remove();
+        }
+    </script>
     <script src="./lib/script.js"></script>
 </body>
 </html>

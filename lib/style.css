@@ -13,8 +13,8 @@ body{
     animation: glowhead 5s, dance 1.7s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    text-shadow: 1px 1px white, 2px 2px yellow, 3px 3px orange;
-    font-family: sans-serif;
+    text-shadow: 1px 1px 3px white, 2px 2px 4px yellow, 3px 3px 5px orange;
+    font-family: cursive;
     
 }
 @keyframes glowhead{
@@ -37,6 +37,7 @@ body{
     padding: 15px;
     position: fixed;
     bottom: 0px;
+    z-index: 9999;
 }
 .link{
     color: white;
@@ -76,6 +77,24 @@ body{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
+.baisakhiDiv{
+    background-color: rgba(253, 219, 107, 0.3);
+    border-radius: 50%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.baisakhi{
+    background: url("../khanda.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    border-radius: 20px;
+    color: brown;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px white;
+}
+
 @keyframes anim2{
     0%{
         transform: scale(1);
@@ -140,6 +159,9 @@ h1 {
     h1{
         font-size: 2rem;
     }
+    .baisakhi{
+        font-size: 1rem;
+    }
 }
 #guru{
     background: white;
@@ -167,12 +189,8 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) {
-    .row{
-        display:none;
-        
-    }
-    body{
-        background: white;
+    .row .head{
+        font-size: 3rem;
     }
     .message{
         display: block;
