@@ -10,7 +10,7 @@ body{
     background: linear-gradient(to bottom, rgba(255,0,0,0.7), rgba(0,0,255,0.7));
 }
 .head{
-    animation: glowhead 5s, dance 1.7s;
+    animation: glowhead 5s, j 1.7s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     text-shadow: 1px 1px 3px white, 2px 2px 4px yellow, 3px 3px 5px orange;
