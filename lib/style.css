@@ -14,7 +14,7 @@ body{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     text-shadow: 1px 1px 3px white, 2px 2px 4px yellow, 3px 3px 5px orange;
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
     
 }
 @keyframes glowhead{
